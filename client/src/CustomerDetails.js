@@ -53,7 +53,7 @@ export default function CustomerDetails(props) {
         setAmount('')
       })
       .then(()=>{
-        axios.post(`https://localhost:8083/api/transactions`, data2)
+        axios.post(`https://localhost:8082/api/transactions`, data2)
       })
       .catch(err => {
         console.log('Error from Tranferring');
