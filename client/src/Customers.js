@@ -4,7 +4,6 @@ import CustomerCard from './CustomerCard'
 import { Grid } from '@mui/material'
 import editbackground from './assets/editbg.png';
 
-console.log(process.env.DB_USERNAME)
 const styles = {
   background: {
       position: 'absolute',

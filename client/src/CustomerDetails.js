@@ -46,14 +46,14 @@ export default function CustomerDetails(props) {
       amount: amount
     }
 
-    axios.patch(`http://localhost:8082/api/customers/transfer`, data)
+    axios.patch(`https://grip-banking-task.herokuapp.com/api/customers/transfer`, data)
       .then(res => {
         props.setL(L => !L)
         props.setSuccess(true)
         setAmount('')
       })
       .then(()=>{
-        axios.post(`http://localhost:8082/api/transactions`, data2)
+        axios.post(`https://grip-banking-task.herokuapp.com/api/transactions`, data2)
       })
       .catch(err => {
         console.log('Error from Tranferring');
