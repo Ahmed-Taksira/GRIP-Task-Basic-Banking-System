@@ -23,6 +23,10 @@ if(process.env.NODE_ENV === 'production'){
         res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
     })
 }
+else
+    app.get('/', (req,res)=>{
+        res.send("API is working.")
+})
 
 const port = process.env.PORT || 8082;
 
