@@ -21,7 +21,7 @@ export default function Customers() {
   const [listener, setListener] = React.useState(false)
 
   React.useEffect(()=>{
-    axios.get(`http://localhost:8082/api/customers`)
+    axios.get(`https://localhost:8082/api/customers`)
     .then(res=>setCustomers(res.data))
     .catch(err =>{
       console.log('Error from Getting');

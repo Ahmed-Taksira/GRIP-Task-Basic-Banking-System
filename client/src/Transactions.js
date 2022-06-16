@@ -20,7 +20,7 @@ export default function Transactions() {
   const [transactions, setTransactions]=React.useState([])
 
   React.useEffect(()=>{
-    axios.get(`http://localhost:8082/api/transactions`)
+    axios.get(`https://localhost:8082/api/transactions`)
     .then(res=>setTransactions(res.data))
     .catch(err =>{
       console.log('Error from Getting');
