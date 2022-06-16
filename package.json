@@ -1,0 +1,31 @@
+{
+  "name": "grip-task-basic-banking-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "app": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed-Taksira/GRIP-Task-Basic-Banking-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmed-Taksira/GRIP-Task-Basic-Banking-System/issues"
+  },
+  "homepage": "https://github.com/Ahmed-Taksira/GRIP-Task-Basic-Banking-System#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.8",
+    "nodemon": "^2.0.16",
+    "validation": "^0.0.1"
+  }
+}
