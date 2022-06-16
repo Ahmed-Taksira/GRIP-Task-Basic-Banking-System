@@ -4,6 +4,7 @@ import CustomerCard from './CustomerCard'
 import { Grid } from '@mui/material'
 import editbackground from './assets/editbg.png';
 
+console.log(process.env.DB_USERNAME)
 const styles = {
   background: {
       position: 'absolute',
@@ -21,7 +22,7 @@ export default function Customers() {
   const [listener, setListener] = React.useState(false)
 
   React.useEffect(()=>{
-    axios.get(`https://localhost:8083/api/customers`)
+    axios.get(`https://grip-banking-task.herokuapp.com/api/customers`)
     .then(res=>setCustomers(res.data))
     .catch(err =>{
       console.log('Error from Getting');
