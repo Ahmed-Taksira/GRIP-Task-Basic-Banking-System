@@ -28,6 +28,6 @@ else
         res.send("API is working.")
 })
 
-const port = process.env.REACT_APP_PORT || 8082;
+const port = process.env.PORT || 8082;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
