@@ -16,12 +16,13 @@ const styles = {
   }
 };
 
+console.log(process.env.REACT_APP_PORT)
 export default function Customers() {
   const [customers, setCustomers]=React.useState([])
   const [listener, setListener] = React.useState(false)
 
   React.useEffect(()=>{
-    axios.get('http://localhost:8082/api/customers')
+    axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/customers`)
     .then(res=>setCustomers(res.data))
     .catch(err =>{
       console.log('Error from Getting');
