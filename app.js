@@ -15,6 +15,7 @@ app.use(express.json({ extended: false }));
 
 app.use('/api/customers', customers);
 app.use('/api/transactions', transactions)
+console.log(process.env.NODE_ENV)
 
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static(path.join(__dirname,'/client/build')))
